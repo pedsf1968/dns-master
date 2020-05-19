@@ -4,7 +4,9 @@ ENV DEBIAN_FRONTEND noninteractive
 
 COPY ./start.sh /tmp
 COPY ./named.conf.local /tmp
+COPY ./resolv.conf /tmp
 COPY ./db.reseau.fr /tmp
+COPY ./db.192 /tmp
 
 
 RUN apt-get update \
